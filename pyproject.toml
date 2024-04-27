@@ -1,0 +1,42 @@
+[project]
+name = "InstantMesh"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Siddharth Ancha", email = "sancha@mit.edu"},
+]
+dependencies = [
+    "torch>=2.1.0",
+    "torchvision",
+    "triton",
+    "xformers>=0.0.25.post1",
+    "pytorch-lightning==2.1.2",
+    "gradio==3.41.2",
+    "huggingface-hub",
+    "einops",
+    "omegaconf",
+    "torchmetrics",
+    "webdataset",
+    "accelerate",
+    "tensorboard",
+    "PyMCubes",
+    "trimesh",
+    "rembg",
+    "transformers==4.34.1",
+    "diffusers==0.20.2",
+    "bitsandbytes",
+    "imageio[ffmpeg]",
+    "xatlas",
+    "plyfile",
+    "nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast",
+]
+requires-python = ">=3.10,<3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel", "torch"]
+build-backend = "setuptools.build_meta"
+
+[tool.pdm]
+distribution = true
