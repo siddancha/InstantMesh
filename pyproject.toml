@@ -29,6 +29,7 @@ dependencies = [
     "xatlas",
     "plyfile",
     "nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast",
+    "Ninja>=1.11.1.1",
 ]
 requires-python = ">=3.10,<3.12"
 readme = "README.md"
